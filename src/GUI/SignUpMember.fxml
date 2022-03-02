@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #42060C;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.SignUpController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="172.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="166.0" fitWidth="163.0" layoutX="4.0" layoutY="110.0">
+               <image>
+                  <Image url="@assets/transparent-urban-tribes-icon-gamer-icon-5dfa26c68f25d6.8406371115766750145863.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="GoBack" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#GoBack" style="-fx-background-radius: 30;" text="&lt;" />
+         </children></AnchorPane>
+      <Label layoutX="188.0" layoutY="52.0" prefHeight="38.0" prefWidth="426.0" text="ESTN is glad to have you as a member!" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="269.0" layoutY="115.0" text="Username" textFill="WHITE" />
+      <Label layoutX="269.0" layoutY="148.0" text="Password" textFill="WHITE" />
+      <Label layoutX="269.0" layoutY="186.0" text="Date of Birth" textFill="WHITE" />
+      <Label layoutX="269.0" layoutY="218.0" text="City" textFill="WHITE" />
+      <Label layoutX="269.0" layoutY="253.0" text="Rank" textFill="WHITE" />
+      <TextField id="label_username" fx:id="lb_username" layoutX="357.0" layoutY="111.0" promptText="Enter your username" style="-fx-background-radius: 10;" />
+      <PasswordField id="label_password" fx:id="lb_password" layoutX="357.0" layoutY="144.0" promptText="Enter your password" style="-fx-background-radius: 10;" />
+   
+      <Label layoutX="306.0" layoutY="338.0" text="Already have an account?" textFill="WHITE" />
+      <Hyperlink fx:id="to_login" layoutX="445.0" layoutY="335.0" onAction="#ToLogin" text="Login" />
+      <Button fx:id="BtnSignUp" layoutX="357.0" layoutY="301.0" mnemonicParsing="false" onAction="#SignUpMember" style="-fx-background-radius: 20;" text="Sign Up" />
+      <TextField fx:id="lb_city" layoutX="358.0" layoutY="214.0" style="-fx-background-radius: 20;" />
+      <TextField fx:id="lb_rank" layoutX="358.0" layoutY="249.0" style="-fx-background-radius: 20;" />
+      <DatePicker fx:id="date_naiss" layoutX="356.0" layoutY="182.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-radius: 20;" />
+   </children>
+</AnchorPane>

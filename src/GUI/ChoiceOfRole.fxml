@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ChoiceOfRoleController">
+   <children>
+      <Circle fill="#42060c" layoutX="428.0" layoutY="218.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#42060c" layoutX="175.0" layoutY="218.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="157.0" fitWidth="169.0" layoutX="349.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/transparent-urban-tribes-icon-gamer-icon-5dfa26c68f25d6.8406371115766750145863.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="139.0" fitWidth="139.0" layoutX="111.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/coach.png" />
+         </image>
+      </ImageView>
+      <Hyperlink fx:id="GoToCoachSignUp" layoutX="143.0" layoutY="275.0" onAction="#GoToSignUpCoach" text="Coach" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="GoToMemberSignUp" layoutX="386.0" layoutY="270.0" onAction="#GoToSignUpMember" text="Member" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="215.0" layoutY="45.0" text="Pick your role!" wrapText="true">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#GoBack" style="-fx-background-radius: 30;" text="&lt;" />
+   </children>
+</AnchorPane>
