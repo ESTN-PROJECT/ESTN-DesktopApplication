@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="631.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.EquipeController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+               <children>
+                  <AnchorPane id="AnchorPane" layoutX="-21.0" layoutY="-21.0" prefHeight="631.0" prefWidth="840.0" style="-fx-background-color: #42060C;">
+                     <children>
+                        <AnchorPane prefHeight="631.0" prefWidth="260.0" style="-fx-background-color: white;">
+                           <children>
+                              <ImageView fx:id="logo" fitHeight="146.0" fitWidth="122.0" layoutX="66.0">
+                                 <image>
+                                    <Image url="@../GUI_assets/274699900_259835589652111_5841210095208234283_n.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="BackFromT" layoutX="14.0" layoutY="591.0" mnemonicParsing="false" onAction="#GoBack" style="-fx-background-radius: 30;" text="&lt;" />
+                              <VBox layoutX="20.0" layoutY="146.0" prefHeight="338.0" prefWidth="220.0" spacing="15.0">
+                                 <children>
+                                    <TextField fx:id="lb_teamname" prefHeight="32.0" prefWidth="221.0" promptText="Team name" style="-fx-background-radius: 10;" />
+                                    <TextField fx:id="lb_game" prefHeight="32.0" prefWidth="221.0" promptText="Game" style="-fx-background-radius: 10;" />
+                                    <TextField fx:id="lb_leaderign" layoutX="10.0" layoutY="42.0" prefHeight="32.0" prefWidth="221.0" promptText="Team leader IGN" style="-fx-background-radius: 10;" />
+                                    <TextField fx:id="lb_p2" layoutX="10.0" layoutY="74.0" prefHeight="32.0" prefWidth="221.0" promptText="Player 2 IGN" style="-fx-background-radius: 10;" />
+                                    <TextField fx:id="lb_p3" layoutX="10.0" layoutY="106.0" prefHeight="32.0" prefWidth="221.0" promptText="Player 3 IGN" style="-fx-background-radius: 10;" />
+                                    <TextField fx:id="lb_p4" layoutX="10.0" layoutY="138.0" prefHeight="32.0" prefWidth="221.0" promptText="Player 4 IGN" style="-fx-background-radius: 10;" />
+                                    <TextField fx:id="lb_p5" layoutX="10.0" layoutY="74.0" prefHeight="32.0" prefWidth="221.0" promptText="Player 5 IGN" style="-fx-background-radius: 10;" />
+                                 </children>
+                              </VBox>
+                              <Label fx:id="lb_id" layoutX="102.0" layoutY="572.0" prefHeight="26.0" prefWidth="81.0" />
+                           </children>
+                        </AnchorPane>
+                        <Button fx:id="CreateT" layoutX="677.0" layoutY="553.0" mnemonicParsing="false" onAction="#CreateT" prefHeight="45.0" prefWidth="121.0" style="-fx-background-radius: 10;" text="Create" />
+                        <ListView fx:id="listteams" layoutX="277.0" layoutY="23.0" onMousePressed="#index" prefHeight="302.0" prefWidth="545.0" />
+                        <Button fx:id="DeleteT" layoutX="297.0" layoutY="552.0" mnemonicParsing="false" onAction="#DeleteT" prefHeight="46.0" prefWidth="122.0" style="-fx-background-radius: 10;" text="Delete" />
+                        <Button fx:id="UpdateT" layoutX="485.0" layoutY="552.0" mnemonicParsing="false" onAction="#UpdateT" prefHeight="46.0" prefWidth="122.0" style="-fx-background-radius: 10;" text="Update" />
+                        <Button fx:id="Show" layoutX="700.0" layoutY="334.0" mnemonicParsing="false" onAction="#Show" prefHeight="46.0" prefWidth="122.0" style="-fx-background-radius: 10;" text="Show" />
+                        <Button fx:id="btnTri" layoutX="277.0" layoutY="334.0" mnemonicParsing="false" onAction="#Tri" prefHeight="46.0" prefWidth="122.0" style="-fx-background-radius: 10;" text="Tri" />
+                        <TextField fx:id="searchbar" layoutX="454.0" layoutY="334.0" onAction="#Recherche" prefHeight="46.0" prefWidth="191.0" />
+                        <Button fx:id="btnsms" layoutX="277.0" layoutY="412.0" mnemonicParsing="false" onAction="#sendSMS" prefHeight="46.0" prefWidth="122.0" text="Send SMS" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

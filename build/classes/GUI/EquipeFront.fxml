@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="669.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.EquipeFrontController">
+   <children>
+      <AnchorPane prefHeight="670.0" prefWidth="486.0">
+         <children>
+            <ImageView fx:id="logo" fitHeight="276.0" fitWidth="242.0" layoutX="122.0" layoutY="6.0">
+               <image>
+                  <Image url="@../GUI_assets/274699900_259835589652111_5841210095208234283_n.png" />
+               </image>
+            </ImageView>
+            <VBox fillWidth="false" layoutX="136.0" layoutY="282.0" prefHeight="338.0" prefWidth="295.0" spacing="15.0">
+               <children>
+                  <TextField fx:id="lb_teamname" prefHeight="32.0" prefWidth="221.0" promptText="Team name" style="-fx-background-radius: 10;" />
+                  <TextField fx:id="lb_game" prefHeight="32.0" prefWidth="221.0" promptText="Game" style="-fx-background-radius: 10;" />
+                  <TextField fx:id="lb_leaderign" layoutX="10.0" layoutY="42.0" prefHeight="32.0" prefWidth="221.0" promptText="Team leader IGN" style="-fx-background-radius: 10;" />
+                  <TextField fx:id="lb_p2" layoutX="10.0" layoutY="74.0" prefHeight="32.0" prefWidth="221.0" promptText="Player 2 IGN" style="-fx-background-radius: 10;" />
+                  <TextField fx:id="lb_p3" layoutX="10.0" layoutY="106.0" prefHeight="32.0" prefWidth="221.0" promptText="Player 3 IGN" style="-fx-background-radius: 10;" />
+                  <TextField fx:id="lb_p4" layoutX="10.0" layoutY="138.0" prefHeight="32.0" prefWidth="221.0" promptText="Player 4 IGN" style="-fx-background-radius: 10;" />
+                  <TextField fx:id="lb_p5" layoutX="10.0" layoutY="74.0" prefHeight="32.0" prefWidth="221.0" promptText="Player 5 IGN" style="-fx-background-radius: 10;" />
+               </children>
+            </VBox>
+            <Button fx:id="BackFromTF" layoutX="25.0" layoutY="622.0" mnemonicParsing="false" onAction="#GoBack" style="-fx-background-radius: 30;" text="&lt;" />
+            <Button fx:id="CreateTF" layoutX="372.0" layoutY="619.0" mnemonicParsing="false" onAction="#CreateTF" prefHeight="32.0" prefWidth="74.0" style="-fx-background-radius: 10;" text="Create" />
+            <Button fx:id="btnQR" layoutX="136.0" layoutY="619.0" mnemonicParsing="false" onAction="#qrgenerate" prefHeight="32.0" prefWidth="98.0" style="-fx-background-radius: 10;" text="Generate QR" />
+            <Button fx:id="btnQRR" layoutX="243.0" layoutY="619.0" mnemonicParsing="false" onAction="#qrread" prefHeight="32.0" prefWidth="98.0" style="-fx-background-radius: 10;" text="Read QR" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
