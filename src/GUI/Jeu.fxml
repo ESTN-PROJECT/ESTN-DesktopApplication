@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="631.0" prefWidth="840.0" style="-fx-background-color: #42060C;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.JeuController">
+   <children>
+      <ListView fx:id="listJeu" layoutX="279.0" layoutY="71.0" onMousePressed="#index" prefHeight="302.0" prefWidth="545.0" />
+      <Button fx:id="Trier" layoutX="772.0" layoutY="380.0" mnemonicParsing="false" onAction="#TrierJeu" style="-fx-background-color: white; -fx-background-radius: 20;" text="TRIER" />
+      <Button layoutX="657.0" layoutY="468.0" mnemonicParsing="false" onAction="#SupprimerJeu" style="-fx-background-color: white; -fx-background-radius: 20;" text="SUPPRIMER" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Button>
+      <AnchorPane prefHeight="632.0" prefWidth="260.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="146.0" fitWidth="122.0" layoutX="75.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/274660021_506804000888669_8654269052613164216_n.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="Description" layoutX="101.0" layoutY="309.0" prefHeight="41.0" prefWidth="149.0" promptText="DESCRIPTION" style="-fx-background-radius: 10;" />
+            <ChoiceBox fx:id="choixNom" layoutX="99.0" layoutY="238.0" prefHeight="25.0" prefWidth="92.0" style="-fx-background-radius: 10;" />
+            <ChoiceBox fx:id="choixCategorie" layoutX="98.0" layoutY="274.0" prefWidth="150.0" style="-fx-background-radius: 10;" />
+            <Button layoutX="200.0" layoutY="601.0" mnemonicParsing="false" onAction="#quit" style="-fx-background-color: #42060C; -fx-background-radius: 20;" text="CLOSE" textFill="WHITE" />
+            <Button layoutX="81.0" layoutY="366.0" mnemonicParsing="false" onAction="#clean" style="-fx-background-color: #42060C; -fx-background-radius: 20;" text="CLEAN" textFill="WHITE" />
+            <Text layoutX="13.0" layoutY="255.0" opacity="0.54" strokeType="OUTSIDE" strokeWidth="0.0" text="NOM :">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="14.0" layoutY="293.0" opacity="0.54" strokeType="OUTSIDE" strokeWidth="0.0" text="CATEGORIE :">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="img" fitHeight="150.0" fitWidth="200.0" layoutX="30.0" layoutY="399.0" onDragDropped="#drag" onDragOver="#over" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="493.0" layoutY="468.0" mnemonicParsing="false" onAction="#ModifierJeu" style="-fx-background-color: white; -fx-background-radius: 20;" text="MODIFIER" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="336.0" layoutY="468.0" mnemonicParsing="false" onAction="#AddJeu" style="-fx-background-color: white; -fx-background-radius: 20;" text="AJOUTER" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="262.0" layoutY="6.0" prefHeight="61.0" prefWidth="578.0" text="GESTION JEUX" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
