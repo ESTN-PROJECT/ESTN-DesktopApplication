@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="534.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaFX.ListDiscussionController">
+   <children>
+      <Text layoutX="413.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List Discussion" wrappingWidth="206.9873046875">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn_ajouter" layoutX="293.0" layoutY="459.0" mnemonicParsing="false" onAction="#ajouter" styleClass="search-button" stylesheets="@Style.css" text="Ajouter" />
+      <Button fx:id="btn_supprimer" layoutX="626.0" layoutY="459.0" mnemonicParsing="false" onAction="#supprimer" styleClass="search-button" stylesheets="@Style.css" text="supprimer" />
+      <Button fx:id="btn_update" layoutX="453.0" layoutY="459.0" mnemonicParsing="false" onAction="#update" styleClass="search-button" stylesheets="@Style.css" text="Mise à jour" />
+      <Button fx:id="btn_Filtrer" layoutX="782.0" layoutY="459.0" mnemonicParsing="false" onAction="#Filtrer" styleClass="search-button" stylesheets="@Style.css" text="Filtrer" />
+      <Pane fx:id="pan" layoutX="660.0" layoutY="149.0" prefHeight="235.0" prefWidth="200.0">
+         <children>
+            <Text layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contenu" />
+            <TextArea fx:id="contenu_a_jour" layoutX="7.0" layoutY="37.0" prefHeight="162.0" prefWidth="187.0" />
+         </children>
+      </Pane>
+      <ListView fx:id="listview" layoutX="249.0" layoutY="149.0" onMouseClicked="#charger" prefHeight="235.0" prefWidth="409.0" />
+      <VBox prefHeight="534.0" prefWidth="233.0" styleClass="left-bar" stylesheets="@Style.css">
+         <children>
+            <VBox prefHeight="128.0" prefWidth="191.0">
+               <children>
+                  <VBox prefHeight="38.0" prefWidth="191.0" />
+                  <VBox prefHeight="143.0" prefWidth="191.0">
+                     <children>
+                        <VBox prefHeight="10.0" prefWidth="191.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="46.0" prefWidth="189.0" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../estn22/src/GUI/assets/274660021_506804000888669_8654269052613164216_n.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

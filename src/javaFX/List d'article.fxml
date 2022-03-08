@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="452.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaFX.ListDarticleController">
+   <children>
+      <Text layoutX="258.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List d'articles">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn_ajouter" layoutX="43.0" layoutY="403.0" mnemonicParsing="false" onAction="#ajouter" text="Ajouter" />
+      <Button fx:id="btn_update" layoutX="275.0" layoutY="403.0" mnemonicParsing="false" onAction="#update" text="Mise à jour" />
+      <Button fx:id="btn_supprimer" layoutX="518.0" layoutY="403.0" mnemonicParsing="false" onAction="#supprimer" text="Supprimer" />
+      <ListView fx:id="listview" layoutX="66.0" layoutY="108.0" onMouseClicked="#test" prefHeight="200.0" prefWidth="367.0" />
+      <Pane fx:id="pan" layoutX="486.0" layoutY="108.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="Titre_edite" layoutX="7.0" layoutY="42.0" />
+            <Text layoutX="7.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titre" />
+            <Text layoutX="8.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contenu" />
+            <TextField fx:id="contenu_edite" layoutX="7.0" layoutY="100.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
