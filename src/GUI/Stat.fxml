@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="534.0" prefWidth="874.0" stylesheets="@stat.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.StatController">
+   <children>
+      <PieChart fx:id="chart" layoutX="199.0" layoutY="134.0" prefHeight="326.0" prefWidth="454.0" stylesheets="@stat.css" />
+      <AnchorPane layoutX="-1.0" prefHeight="94.0" prefWidth="780.0" style="-fx-background-color: #42060C;">
+         <children>
+            <Text fill="WHITE" layoutX="319.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STATISTICS" textAlignment="CENTER">
+               <font>
+                  <Font size="44.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="80.0" fitWidth="60.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/274699900_259835589652111_5841210095208234283_n.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="GoDashboard" layoutX="33.0" layoutY="486.0" mnemonicParsing="false" onAction="#GoDashboard" style="-fx-background-radius: 20;" text="&lt;" />
+      <Button fx:id="prod" layoutX="14.0" layoutY="107.0" mnemonicParsing="false" onAction="#GoBack" prefHeight="54.0" prefWidth="149.0" text="PRODUIT" textFill="#42060c">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

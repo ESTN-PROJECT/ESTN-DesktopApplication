@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="534.0" prefWidth="775.0" styleClass="right-bar" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ACCEUILController">
+   <children>
+      <Button fx:id="cat" layoutX="453.0" layoutY="241.0" mnemonicParsing="false" onAction="#cat" prefHeight="84.0" prefWidth="185.0" styleClass="search-button" stylesheets="@Style.css" text="GESTION CATEGORIE" textFill="WHITE" />
+      <Button fx:id="produit" layoutX="138.0" layoutY="241.0" mnemonicParsing="false" onAction="#produit" prefHeight="84.0" prefWidth="185.0" styleClass="search-button" stylesheets="@Style.css" text="GESTION PRODUIT" textFill="WHITE" />
+      <Label fx:id="title" layoutX="217.0" layoutY="116.0" prefHeight="45.0" prefWidth="373.0" text="GESTION BOUTIQUE" textFill="#42060c">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="138.0" fitWidth="130.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/274660021_506804000888669_8654269052613164216_n.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

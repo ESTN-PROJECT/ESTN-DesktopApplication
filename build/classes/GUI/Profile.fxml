@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #42060C;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ProfileController">
+   <children>
+      <TextField fx:id="lb_username" layoutX="342.0" layoutY="88.0" prefHeight="25.0" prefWidth="161.0" promptText="Enter your username" style="-fx-background-radius: 10;" />
+      <PasswordField fx:id="lb_password" layoutX="342.0" layoutY="125.0" prefHeight="25.0" prefWidth="161.0" promptText="Enter your password" style="-fx-background-radius: 10;" />
+      <TextArea fx:id="lb_description" layoutX="346.0" layoutY="273.0" prefHeight="42.0" prefWidth="154.0" promptText="Enter your description" style="-fx-background-radius: 10;" />
+      <Button fx:id="BtnSignUp" layoutX="342.0" layoutY="361.0" mnemonicParsing="false" onAction="#SignUpCoach" style="-fx-background-radius: 10; -fx-background-color: white;" text="UPDATE" />
+      <TextField fx:id="lb_cout" layoutX="348.0" layoutY="322.0" prefHeight="25.0" prefWidth="150.0" promptText="Enter your cost per hour" style="-fx-background-radius: 10;" />
+      <Label layoutX="246.0" layoutY="92.0" text="Username" textFill="WHITE" />
+      <Label layoutX="248.0" layoutY="129.0" text="Password" textFill="WHITE" />
+      <Label layoutX="247.0" layoutY="165.0" text="Date of Birth" textFill="WHITE" />
+      <Label layoutX="249.0" layoutY="198.0" text="City" textFill="WHITE" />
+      <Label layoutX="249.0" layoutY="241.0" text="Rank" textFill="WHITE" />
+      <Label layoutX="249.0" layoutY="276.0" text="Description" textFill="WHITE" />
+      <Label layoutX="249.0" layoutY="323.0" text="Cost/Hour" textFill="WHITE" />
+      <DatePicker fx:id="lb_dateNaiss" layoutX="346.0" layoutY="161.0" prefHeight="25.0" prefWidth="154.0" promptText="Enter your date of birth" style="-fx-background-radius: 10;" />
+      <TextField fx:id="Lb_email" layoutX="342.0" layoutY="54.0" prefHeight="25.0" prefWidth="161.0" promptText="Enter your email" style="-fx-background-radius: 10;" />
+      <Label layoutX="248.0" layoutY="58.0" text="Email" textFill="WHITE" />
+      <ComboBox fx:id="Cities" layoutX="348.0" layoutY="198.0" prefHeight="25.0" prefWidth="150.0" promptText="Pick your city" style="-fx-background-radius: 10; -fx-background-color: white;" />
+      <ComboBox fx:id="Ranks" layoutX="348.0" layoutY="237.0" prefHeight="25.0" prefWidth="150.0" promptText="Pick your rank" style="-fx-background-radius: 10; -fx-background-color: white;" />
+      <AnchorPane prefHeight="406.0" prefWidth="174.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="138.0" layoutX="18.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/transparent-urban-tribes-icon-gamer-icon-5dfa26c68f25d6.8406371115766750145863.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="56.0" layoutY="255.0" text="USERNAME" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="34.0" fitWidth="39.0" layoutX="187.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/0u386usramsqrkgrarjqn634d5-47a16fe4af99a8f1855f6a75320faedd.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

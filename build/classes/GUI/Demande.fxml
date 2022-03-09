@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="494.0" prefWidth="512.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.DemandeController">
+   <children>
+      <ImageView fitHeight="90.0" fitWidth="85.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/274660021_506804000888669_8654269052613164216_n.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="117.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DEMANDE D'ENTRAINEMENT" textAlignment="CENTER" wrappingWidth="325.13671875">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Text>
+      <Button layoutX="230.0" layoutY="369.0" mnemonicParsing="false" onAction="#AjouterDemande" prefHeight="35.0" prefWidth="99.0" style="-fx-background-color: #42060C; -fx-background-radius: 20;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="DescriptionD" layoutX="232.0" layoutY="302.0" prefHeight="41.0" prefWidth="149.0" promptText="DESCRIPTION" style="-fx-background-radius: 10;" />
+      <Button layoutX="383.0" layoutY="451.0" mnemonicParsing="false" onAction="#clean" style="-fx-background-color: #42060C; -fx-background-radius: 20;" text="CLEAN" textFill="WHITE" />
+      <ChoiceBox fx:id="NomJeu" layoutX="260.0" layoutY="151.0" prefHeight="25.0" prefWidth="92.0" style="-fx-background-radius: 10;" />
+      <Text layoutX="163.0" layoutY="168.0" opacity="0.54" strokeType="OUTSIDE" strokeWidth="0.0" text="Game :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="NomCoach" layoutX="260.0" layoutY="185.0" prefHeight="25.0" prefWidth="92.0" style="-fx-background-radius: 10;" />
+      <Text layoutX="162.0" layoutY="202.0" opacity="0.54" strokeType="OUTSIDE" strokeWidth="0.0" text="Coach :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Button layoutX="443.0" layoutY="451.0" mnemonicParsing="false" onAction="#quit" style="-fx-background-color: #42060C; -fx-background-radius: 20;" text="CLOSE" textFill="WHITE" />
+      <TextField fx:id="telef" layoutX="232.0" layoutY="262.0" prefHeight="25.0" prefWidth="149.0" promptText="TELEPHONE" style="-fx-background-radius: 10;" />
+      <ChoiceBox fx:id="NomMembre" layoutX="261.0" layoutY="222.0" prefHeight="25.0" prefWidth="92.0" style="-fx-background-radius: 10;" />
+      <Text layoutX="165.0" layoutY="239.0" opacity="0.54" strokeType="OUTSIDE" strokeWidth="0.0" text="Member :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Button fx:id="go" layoutX="14.0" layoutY="451.0" mnemonicParsing="false" onAction="#go" style="-fx-background-radius: 20;" text="&lt;" />
+   </children>
+</AnchorPane>

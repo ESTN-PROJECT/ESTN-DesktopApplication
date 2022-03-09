@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="534.0" prefWidth="874.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.DashboardController">
+   <children>
+      <AnchorPane layoutY="-2.0" prefHeight="543.0" prefWidth="169.0" style="-fx-background-color: #42060C;">
+         <children>
+            <Label layoutX="47.0" layoutY="72.0" text="Manage" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label layoutX="30.0" layoutY="29.0" text="Dashboard " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Line endX="18.0" layoutX="117.0" layoutY="71.0" startX="-100.0" stroke="WHITE" />
+            <VBox layoutX="56.0" layoutY="117.0" prefHeight="418.0" prefWidth="100.0" spacing="15.0">
+               <children>
+                  <Hyperlink fx:id="ShowUsers" onAction="#Show" text="Users" textFill="WHITE" />
+                  <Hyperlink fx:id="ShowTeams" onAction="#ShowTeams" text="Teams" textFill="WHITE" />
+                  <Hyperlink fx:id="ShowScrims" onAction="#ShowScrims" text="Scrims" textFill="WHITE" />
+                  <Hyperlink fx:id="Events" onAction="#GoToEvents" text="Events" textFill="WHITE" />
+                  <Hyperlink fx:id="Articles" onAction="#GoToArticles" text="Articles" textFill="WHITE" />
+                  <Hyperlink fx:id="Forum" onAction="#GoToForum" text="Forums" textFill="WHITE" />
+                  <Hyperlink fx:id="News" onAction="#GoToNews" text="News" textFill="WHITE" />
+                  <Hyperlink fx:id="GoToDiscussion" onAction="#GoToDiscussion" text="Discussions" textFill="WHITE" />
+                  <Hyperlink fx:id="Categories" onAction="#GoToCategories" text="Categories" textFill="WHITE" />
+                  <Hyperlink fx:id="Products" onAction="#GoToProducts" text="Products" textFill="WHITE" />
+                  <Hyperlink fx:id="ToGames" onAction="#ToGames" text="Games" textFill="WHITE" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <ListView fx:id="UserList" layoutX="183.0" layoutY="82.0" prefHeight="428.0" prefWidth="589.0" style="-fx-background-color: white;" />
+      <ImageView fx:id="Trier" fitHeight="25.0" fitWidth="32.0" layoutX="590.0" layoutY="42.0" onMouseClicked="#Trier" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/5453086.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <TextField fx:id="search" layoutX="622.0" layoutY="42.0" onAction="#searchUser" onMouseClicked="#search" prefHeight="25.0" prefWidth="119.0" promptText="Search" />
+      <ImageView fx:id="DeleteUser" fitHeight="23.0" fitWidth="17.0" layoutX="746.0" layoutY="45.0" onDragDetected="#DeleteUser" onMouseClicked="#DeleteUser" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/1634972.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="Logout" fitHeight="27.0" fitWidth="37.0" layoutX="840.0" layoutY="7.0" onMouseClicked="#Logout" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/716017.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="BtnToUserUpdate" layoutX="805.0" layoutY="498.0" mnemonicParsing="false" onAction="#ToUserUpdate" style="-fx-background-color: #42060C; -fx-background-radius: 20;" text="Update" textFill="WHITE" />
+   </children>
+</AnchorPane>
